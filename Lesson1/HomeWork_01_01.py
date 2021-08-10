@@ -15,5 +15,5 @@ while calc_age < birth:
     calc_age = int(input('К какому году нужно посчитать возраст? '))
 
 # Вычисление и вывод возраста пользователя
-print('Ваш возраст в', calc_age, 'году будет', calc_age - birth)
+print('Ваш возраст в', calc_age, 'году будет', calc_age - birth, '\b.')
 
