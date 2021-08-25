@@ -6,6 +6,7 @@ ratings = {'Секретные материалы': 0.9, 'Ведьмак': 0.95,
            'Во все тяжкие': 0.85, 'Игра престолов': 0.87, 'Карточный домик': 0.82, 'Рик и Морти': 1}
 
 
+# Функция, возвращающая все названия сериалов для заданного жанра;
 def get_names(key, value):
     series_name = []
     for i in shows.keys():
@@ -15,14 +16,17 @@ def get_names(key, value):
     return series_name
 
 
+# Присвоение результата переменной c указанием жанра
 series_name = get_names(shows, value=input('Введите название жанра: '))
 
 
+# Функция, возвращающая средний рейтинг для сериалов из списка "series_name"
 def get_rating(key, value):
     series_rating = []
     for i in value:
         series_rating.append(key[i])
-    print('Рейтинги этих сериалов: ', series_rating)
+    return series_rating
 
 
+# Вызов функции
 get_rating(ratings, series_name)
