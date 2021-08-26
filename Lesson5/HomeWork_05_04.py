@@ -11,8 +11,7 @@ entry = input('Событие/наблюдение: ')
 # Открытие на запись и дозапись
 with open('diary.txt', 'a') as file:
     # Запись в файл с переносом строки
-    file.write('\nДата: ' + date + '\n')
-    file.write(entry + '\n')
+    file.write('\nДата: ' + date + '\n' + entry + '\n')
 
 # Открытие на чтение
 with open('diary.txt', 'r') as file:
