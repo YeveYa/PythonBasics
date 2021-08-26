@@ -8,14 +8,13 @@
 date = input('Укажите дату: ')
 entry = input('Событие/наблюдение: ')
 
-# Открытие на чтение, запись и дозапись
+# Открытие на запись и дозапись
 with open('diary.txt', 'a') as file:
     # Запись в файл с переносом строки
     file.write('\nДата: ' + date + '\n')
     file.write(entry + '\n')
-    # Закрываем файл по окончании записи
-    file.close()
 
+# Открытие на чтение
 with open('diary.txt', 'r') as file:
     data = file.read()
     print(data + '\n')
